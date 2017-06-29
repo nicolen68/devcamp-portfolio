@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
   end
   
   def guest_user
-     OpenStruct.new(name: "Guest User", first_name: "Guest", last_name: "User", email: "guest@examplecom")
+     OpenStruct.new(name: "Guest User", 
+                    first_name: "Guest", 
+                    last_name: "User",
+                    email: "guest@examplecom"
+                    )
   end
 end
