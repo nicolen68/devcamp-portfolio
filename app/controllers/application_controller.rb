@@ -10,13 +10,4 @@ class ApplicationController < ActionController::Base
   def set_copyright
     @copyright = ThisViewTool::Renderer.copyright 'A person', 'All rights reserved'
   end 
-  
-end
-
-module ThisViewTool
-  class Renderer
-    def self.copyright name, msg
-      "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
-    end
   end
-end
